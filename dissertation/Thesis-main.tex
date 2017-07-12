@@ -1,0 +1,276 @@
+%% LyX 2.1.2.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,english]{report}
+\usepackage{mathptmx}
+\renewcommand{\familydefault}{\rmdefault}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm,headheight=1cm,headsep=1cm,footskip=1cm}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{verbatim}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[numbers]{natbib}
+\usepackage{nomencl}
+% the following is useful when we have the old nomencl.sty package
+\providecommand{\printnomenclature}{\printglossary}
+\providecommand{\makenomenclature}{\makeglossary}
+\makenomenclature
+\doublespacing
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\providecommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+%% A simple dot to overcome graphicx limitations
+\newcommand{\lyxdot}{.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{tauthesis}
+\usepackage[font={small,bf}, labelfont={small,bf}, margin=1cm]{caption}
+\usepackage{titlesec}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp}{0pt}{\Huge\bfseries}
+
+
+\Title{\textbf{Kidney Segmentation and Renal Lesion Detection in 3D CT}}
+\Author{\textbf{\large Neta Blau}}
+\Year{October 2017}
+\Supervisor{Prof. Nahum Kiryati}
+\Department{School of Electrical and Electronic Engineering}
+\Degree{Master of Science in Electrical and Electronic Engineering}
+% \Degree{Doctor of Philosophy}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+\begin{comment}
+This is Micheal JasonSmith's uocthesis example ported to \LyX{} by
+Etienne Lalibert� (etiennlaliberte@gmail.com).
+
+Alex Liberzon (alex.liberzon@gmail.com) modified it to the Tel Aviv
+University format, with the header of the Faculty of Engineering.
+You can open the tauthesis.sty to update it to your needs.
+
+Go to \textsf{Document > Settings > \LaTeX{} preamble} to modify the
+\textsf{Title, Author, Year, Supervisor, Department} fields.
+
+Default processor is now PDFLATEX.
+\end{comment}
+
+
+\coverpage
+
+\titlepage
+
+\prelimpages
+
+\begin{comment}
+Split the thesis into separate chapters. Use \textbackslash{}include
+mode to include the separate files.
+
+Use \LyX{} Table of Contents, List of Figures, List of Tables and
+Nomenclature automatics to include them in the thesis. Double - click
+on each item to change the default level of contents, move the chapters
+up/down and so on.
+\end{comment}
+
+
+\chapter*{Abstract}
+
+Here comes the 1-2 pages long abstract of the thesis in English.  
+
+\tableofcontents{}
+
+\acknowledgments{I would like to thank my ...}
+
+\textpages
+
+\listoffigures
+
+
+\listoftables
+
+
+\printnomenclature{}
+
+
+\chapter{Introduction}
+
+% SKELETON: A (short?) paragraph to describe the importance of automatic diagnosis in medical imaging (reduce overload for radiologists, improve the chances for early detection of asymptomatic medical conditions, etc.) and the growing interest in such tools.
+
+In a radiologist's line of work time is of the essence. The flux of imaging cases that require human attention is often overwhelming, forcing radiologists to increase their rate of diagnosis. This, in turn, inevitably reduces the quality of their work, causing some pathologies to go undetected or misrepresented. The consequences may vary between suboptimal treatment and considerable damage to patients' health. Automated tools that aid radiologists with their tasks are therefore highly desirable. %and can make the diagnostic process more consistent and complete%
+Automation of medical image analysis have been the focus of much attention in recent years, supported by the rapid development of computer vision technologies.
+
+\section{Renal lesions}
+
+% SKELETON: Describe the pathologies we are trying to detect, their frequency in the population, why is it important to detect and diagnose them. Provide medical motivation.
+
+Among the overlooked pathologies are renal lesions. Their asymptomatic nature makes their detection largely incidental, but not less important. Renal masses can be cystic or solid, benign or malignant, and they range from simple renal cysts to cancerous tumors.
+
+Simple renal cysts are benign and asymptomatic fluid collections in the kidney, commonly occurring in aging kidneys. They are usually found incidentally in patients undergoing abdominal imaging for other reasons \cite{taal2011brenner}. In most cases, no treatment is required. However, cysts must be reported by the radiologist and sometimes require follow-up as they may evolve in time.
+% TODO: go over the references...
+At the other end of the scale, renal cancer is a lethal disease that manifests as malignant renal lesions. Renal cancer causes approximately 14,000 deaths in the United States every year \cite{nci2014kidney}\cite{seer2017kidney}. The majority of renal cell carcinomas, which account for 90\% of kidney cancers,  are asymptomatic \cite{lee2002mode}, and they as well are usually found incidentally on noninvasive imaging performed for unrelated problems \cite{jayson1998increased}\cite{luciani2000incidental}\cite{homma1995increased}. Early diagnosis of kidney cancer significantly improves survival rates, which fall dramatically once the cancer has spread beyond the kidney \cite{gareth2012early}.
+In this work, we address the detection of both types of renal lesions as incidental findings in a real clinical setting.
+
+% OLD: However, thoroughly examining the results of a CT scan is a very time-consuming task for a radiologist, and these opportunities for early detection of asymptomatic medical conditions are often missed due to lack of resources. This is only one of many reasons for the growing interest in automated tools for medical imaging analysis.
+
+% OLD: While organs detection and segmentation is a crucial step for applications based on 3D CT images, it is eventually just a means to an end - detecting and segmenting lesions, diagnosing diseases and monitoring their progress accurately and consistently. 
+
+\section{Computed tomography (CT)}
+
+% SKELETON: Describe the commonness of CT use in medical diagnosis. Describe important properties of this modality (the image intensity is equivalent to the physical density) and useful terminology (axial, sagittal, coronal, pixel spacing and spacing between slices). Explain about the use of contrast enhancement.
+
+Among the most frequent imaging procedures carried out in hospitals is the three-dimensional (3D) computerized tomography (CT). CT scans are widely used for preventive medicine and screening for diseases in different parts of the human body. Almost 79 million CT scans were performed in the U.S. during the year of 2015, 245 scans per 1000 population \cite{oecd2017stat}.
+
+To produce a CT scan, an X-ray generator rotates around the bed where the patient is lying. The x-ray beams shot by the generator are picked up by X-ray detectors positioned on the opposite side of the circle. When a full rotation is completed, a 2D image is constructed. By moving the bed along the rotation axis, a series of cross-sectional images is obtained, composing the 3D scan. The voxels in the scan are displayed according to the mean attenuation of the tissues that they correspond to on a scale from +3071 (most attenuating) to -1024 (least attenuating). This scale is known as the Hounsfield unit (HU) scale. Water, for example, has an attenuation of 0 HU, while air is approximately -1000 HU. Depending on the diagnostic task, the scan can be viewed as images in each of the anatomical planes - axial, sagittal or coronal. The scans are often anisotropic, and the resolution of each slice (also referred to as the pixel spacing), and the spacing between slices vary from scan to scan.
+
+In order to allow higher visibility, an intravenous (IV) contrast agent is often administered. The contrast material can help enhancing the contrast between a lesion and its surrounding tissue. The time interval between the contrast administration and the image acquisition is determined according to the purpose of the imaging and the investigated organs. To see renal lesions better and detect them more easily, the images will usually be acquired at the portal phase of enhancement, 70-80 seconds after the initiation of contrast injection.
+
+\section{Kidney segmentation}
+
+% SKELETON: Describe the problem, the main challenges, and what has been done so far (literature survey).
+
+When a radiologist goes over a CT scan and processes it, he first identifies the patient's organs and then looks for any irregularities or abnormalities in them. Adopting the radiologist's strategy, our first step towards detecting renal lesions is to identify and segment the kidneys. Automatic kidney segmentation is a challenging task due to the high inter-patient variability of the kidney shape and location. This task is made harder still by the gray-levels inhomogeneity of the kidney, its similarity to surrounding organs such as the liver, and the possible presence of pathologies.
+
+Numerous methods for kidney segmentation in CT scans have been investigated in the literature. Several atlas-based approaches were proposed in which the segmentation is obtained by registering one or more labeled atlases to the unlabelled target volume \cite{wolz2012multi}\cite{chu2013multi}\cite{yang2014automatic}. However, volume registration is very time consuming, and the computation time increases when a multi-atlas approach is used to improve the segmentation accuracy.
+The increasing availability of medical images enabled the utilization of supervised-learning approaches for organ detection and segmentation. Several proposed methods employ regression forests for organ localization \cite{cuingnet2012automatic}\cite{criminisi2013regression}, classification forests for initial segmentation \cite{criminisi2013regression} and joint classification-regression forests for spatially-structured segmentation \cite{glocker2012joint}. These methods are much more efficient than the atlas-based approaches, but their drawback is their dependency on the selected input features.
+
+In recent years, deep convolutional neural networks gained great success in various computer vision tasks, including object detection and segmentation. Given sufficient labeled data, deep networks can learn complex features and representations of the objects to be segmented, thus eliminating the need to manually define and select features. With modern GPUs, the convolution computations have been accelerated significantly, making deep networks a viable option for real-life segmentation tasks.
+Several studies utilized fully convolutional networks (FCN) for end-to-end segmentation in medical images, and specifically in CT scans. Zhou et al. \cite{zhou2016three} trained an FCN to segment 19 different organs in 2D slices from all three anatomical planes of a CT scan. The resulting segmentations were later fused by majority voting into a 3D segmentation. Hu et. al \cite{hu2016automatic} employed a 3D FCN for liver, spleen and kidney segmentation. This step was followed by a time-implicit multi-phase level-set algorithm for segmentation refinement. Cascaded FCNs were also applied to segment the liver and its lesions \cite{christ2016automatic}\cite{dou20163d}. Thong et. al \cite{thong2016convolutional} applied convolutional networks for kidney segmentation in contrast-enhanced CT scans and reported promising results.
+
+\section{Cyst detection}
+
+% SKELETON: Describe the problem, the main challenges, and what has been done so far (literature survey).
+
+Provided with a high quality segmentation of the kidneys, we can address the problem of detecting renal lesions, starting with simple renal cysts. Due to their random origins, lesions vary significantly in size, location and quantity. Owing to the homogenous fluid consistency of simple cysts, one may think that simple thresholding of the kidney area can suffice for cyst detection. However, being part of the urinary system, other fluid collections are normally present in the kidneys, making it difficult to distinguish renal cysts from healthy functioning parts of the kidneys such as the renal pelvis and renal calyces.
+
+Only few studies were published on automatic tools for detection or segmentation of renal cysts. 
+Battiato et al. \cite{battiato2009objective} proposed a method to refine a cyst segmentation given an initial boundary marked by the radiologist. The refinement is done in the annotated slice using a bank of filters and is then propagated to the other slices. However, in this method, the cysts must be detected by the users, and their intervention is required for the segmentation. Piao et al. \cite{piao2015segmentation} proposed to segment cysts using fuzzy C-mean clustering, but did not report any qualitative results.
+An algorithm proposed by Badura et. al \cite{badura2016automatic} employs thresholding and morphological operations for the detection of cyst candidates. The candidates are then classified into cysts and non-cysts based on 3D shape-related features. This approach produced promising results, but the algorithm was evaluated on a fairly small data set of 16 patients with 25 cysts.
+
+\section{Tumor detection}
+
+% SKELETON: Describe the problem, the main challenges, and what has been done so far (literature survey).
+
+Naturally, cancerous renal tumors have been the focus of more ...
+
+1) Summers (Summers et al., 2001) developed a marker controlled watershed algorithm to segment both kidneys and lesions.
+2) Thresholding algorithm was employed to extract kidneys in (Kim and Park, 2004), and renal lesions were detected and segmented using texture analysis as well as homogeneous region growing.
+3) Linguraru (Linguraru et al., 2009) improved renal lesion segmentation by combining fast-matching and geodesic level set. This method generated accurate lesion segmentation, and quantification of renal lesions became feasible.
+4) Later on, the lesion type was classified using support vector machine on the lesion segmentation (Linguraru et al., 2011).
+5) Liu et al.2015 exophytic lesions
+
+Nevertheless, all these methods investigated texture information of renal lesions because contrast enhancement induces notable intensity difference between lesions and normal kidney tissues. However, texture feature is not distinctive in non-contrast CTC images (Fig. 1a), which makes it difficult to apply these methods to detect renal lesions on CTC images.
+
+% OLD: In \cite{summers2001helical}, thresholding and morphological operations are applied for identification of renal lesions. However, the work focused on the quantitation of the lesions, and detection rates were not reported.
+%Another computer-aided approach for quantification and classification of renal tumors uses a combination of fast marching and geodesic active contour level sets \cite{linguraru2009renal}. In \cite{linguraru2011automated}, multi-phase CT scans were utilized for computing histograms of curvature-related features for the purpose of renal cancer quantification and classification.
+
+% OLD: Another solution, proposed by Liu et al. \cite{liu2015computer}, relies on geometric changes on the kidney surface for cyst candidate detection. Again, shape features are utilized for the classification of the candidates. This algorithm was indeed validated on a large data-set but is limited to detecting only exophytic lesions, and the reported false-positive rate (15 per patient) was high.
+
+\section{Outline of Thesis}
+
+% SKELETON: Emphasize the problem we tried to solve, why it hasn't been solved before, and how our solution is described in this document.
+
+\chapter{Kidney segmentation}
+
+\section{Methods}
+
+Describe the kidney segmentation method in details: the input/output, the data preprocessing steps and the FCN architecture.
+
+% Figure: The kidney segmentation FCN based on the UNeta architecture.
+
+\section{Data-set}
+
+Describe the data set used: randomly selected, number of patients/scans, different resolutions, ground truth annotations, heterogeneous data (including sick kidneys with different pathologies).
+
+\section{Experiments and results}
+
+Describe the training process and validation. Show qualitative and quantitative results.
+
+% Figure: Sample kidney segmentation results in red compared with ground truth annotations in green.
+
+% Table: Segmentation accuracy measurements (recall, precision, Dice coefficient, IOU).
+
+\section{Discussion}
+
+Discuss the results of the kidney segmentation: can they be improved by gathering more data / better quality of ground truth / 3D networks instead of 2D / handling the cyst presence in the ground truth differently.
+
+\chapter{Cyst detection}
+
+\section{Identification of cyst candidates}
+
+Describe the candidate selection algorithm: the input/output, the use of distance maps, and the chosen parameters (thresholding range, minimal radius).
+
+% Figure: Diagram of the cyst candidate selection flow.
+
+\section{Classification of cyst candidates}
+
+Describe the candidate classification method in detail: the 2.5D patch construction, the data preprocessing (thresholding + Gaussian filter), the network architecture, and the removal of redundant cysts.
+
+% Figure: The cyst classification CNN architecture.
+
+\section{Data-set}
+
+Describe the data-set used: randomly selected, number of patients/scans, number of detected cysts, different resolutions and ground truth annotations.
+
+\section{Experiments and results}
+
+Describe the training process and validation. Show qualitative and quantitative results. Elaborate on the different false-positives that were detected and the false-negatives that were missed. Show that the minimal radius parameter controls the trade-off between TP and TP.
+
+% Figure: Sample cysts detected using the proposed algorithm.
+
+% Figure: True-Positives vs. False-Positives (ROC curve) as a function of the minimal radius.
+
+\section{Discussion}
+
+Discuss the results of the cyst detection: can they be improved by gathering more data / better quality of ground truth / 3D networks instead of 2D / other approaches (e.g. shape priors).
+
+\chapter{Tumor detection}
+
+\section{Data-set}
+
+Describe the data-set used: number of patients/scans with number of detected tumors, different resolutions and ground truth annotations. Show the high variability of the tumors.
+
+% Figure: Variability of renal tumors.
+
+\section{Experiments and results}
+
+Describe different methods and approaches we tried and the unsatisfying results...
+
+% Table/Figure: Compare the results / convergence of different algorithms / architectures we tried.
+
+\section{Discussion}
+
+Discuss the unsolved problem of tumors segmentation - what are we missing? Is it only a matter of gathering more data?
+
+\chapter{Conclusions}
+
+What we did, what we achieved, possible next steps.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+
+\newpage{}
+
+\begin{comment}
+It is possible to create the Hebrew part in \LyX{}, but this is less
+of our concern. Any typesetting software like \LyX{} (or Word or OpenOffice)
+is as good for this purpose. After creating the PDF file from the
+Hebrew document, include it here using the Insert -> File -> External
+material -> PDFpages (one of the options). See the example below. 
+\end{comment}
+
+
+\includepdf[pages=-]{hebrew_part}
+\end{document}

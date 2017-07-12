@@ -1,0 +1,177 @@
+\begin{thebibliography}{23}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Badura et~al.(2016)Badura, Wieclawek, and
+  Pycinski]{badura2016automatic}
+Pawel Badura, Wojciech Wieclawek, and Bartlomiej Pycinski.
+\newblock Automatic 3d segmentation of renal cysts in ct.
+\newblock In \emph{Information Technologies in Medicine}, pages 149--163.
+  Springer, 2016.
+
+\bibitem[Battiato et~al.(2009)Battiato, Farinella, Gallo, Garretto, and
+  Privitera]{battiato2009objective}
+S~Battiato, GM~Farinella, G~Gallo, O~Garretto, and C~Privitera.
+\newblock Objective analysis of simple kidney cysts from ct images.
+\newblock In \emph{2009 IEEE International Workshop on Medical Measurements and
+  Applications}, pages 146--149, 2009.
+
+\bibitem[Christ et~al.(2016)Christ, Elshaer, Ettlinger, Tatavarty, Bickel,
+  Bilic, Rempfler, Armbruster, Hofmann, D'Anastasi,
+  et~al.]{christ2016automatic}
+Patrick~Ferdinand Christ, Mohamed Ezzeldin~A Elshaer, Florian Ettlinger, Sunil
+  Tatavarty, Marc Bickel, Patrick Bilic, Markus Rempfler, Marco Armbruster,
+  Felix Hofmann, Melvin D'Anastasi, et~al.
+\newblock Automatic liver and lesion segmentation in ct using cascaded fully
+  convolutional neural networks and 3d conditional random fields.
+\newblock In \emph{MICCAI}, pages 415--423. Springer, 2016.
+
+\bibitem[Chu et~al.(2013)Chu, Oda, Kitasaka, Misawa, Fujiwara, Hayashi, Nimura,
+  Rueckert, and Mori]{chu2013multi}
+Chengwen Chu, Masahiro Oda, Takayuki Kitasaka, Kazunari Misawa, Michitaka
+  Fujiwara, Yuichiro Hayashi, Yukitaka Nimura, Daniel Rueckert, and Kensaku
+  Mori.
+\newblock Multi-organ segmentation based on spatially-divided probabilistic
+  atlas from 3d abdominal ct images.
+\newblock In \emph{MICCAI (2)}, pages 165--172, 2013.
+
+\bibitem[Criminisi et~al.(2013)Criminisi, Robertson, Konukoglu, Shotton,
+  Pathak, White, and Siddiqui]{criminisi2013regression}
+Antonio Criminisi, Duncan Robertson, Ender Konukoglu, Jamie Shotton, Sayan
+  Pathak, Steve White, and Khan Siddiqui.
+\newblock Regression forests for efficient anatomy detection and localization
+  in computed tomography scans.
+\newblock \emph{Medical image analysis}, 17\penalty0 (8):\penalty0 1293--1303,
+  2013.
+
+\bibitem[Cuingnet et~al.(2012)Cuingnet, Prevost, Lesage, Cohen, Mory, and
+  Ardon]{cuingnet2012automatic}
+R{\'e}mi Cuingnet, Raphael Prevost, David Lesage, Laurent~D Cohen, Beno{\^\i}t
+  Mory, and Roberto Ardon.
+\newblock Automatic detection and segmentation of kidneys in 3d ct images using
+  random forests.
+\newblock In \emph{MICCAI}, pages 66--74. Springer, 2012.
+
+\bibitem[Dou et~al.(2016)Dou, Chen, Jin, Yu, Qin, and Heng]{dou20163d}
+Qi~Dou, Hao Chen, Yueming Jin, Lequan Yu, Jing Qin, and Pheng-Ann Heng.
+\newblock 3d deeply supervised network for automatic liver segmentation from ct
+  volumes.
+\newblock In \emph{MICCAI}, pages 149--157. Springer, 2016.
+
+\bibitem[Glocker et~al.(2012)Glocker, Pauly, Konukoglu, and
+  Criminisi]{glocker2012joint}
+Ben Glocker, Olivier Pauly, Ender Konukoglu, and Antonio Criminisi.
+\newblock Joint classification-regression forests for spatially structured
+  multi-object segmentation.
+\newblock \emph{Computer Vision--ECCV 2012}, pages 870--881, 2012.
+
+\bibitem[Homma et~al.(1995)Homma, Kawabe, Kitamura, Nishimura, Shinohara,
+  Kondo, Saito, Minowada, and Asakage]{homma1995increased}
+Yukio Homma, Kazuki Kawabe, Tadaichi Kitamura, Yoji Nishimura, Mitsuru
+  Shinohara, Yasushi Kondo, Isao Saito, Shigeru Minowada, and Yasuyuki Asakage.
+\newblock Increased incidental detection and reduced mortality in renal
+  cancer?recent retrospective analysis at eight institutions.
+\newblock \emph{International journal of urology}, 2\penalty0 (2):\penalty0
+  77--80, 1995.
+
+\bibitem[Hu et~al.(2016)Hu, Wu, Peng, Bao, Chen, and Kong]{hu2016automatic}
+Peijun Hu, Fa~Wu, Jialin Peng, Yuanyuan Bao, Feng Chen, and Dexing Kong.
+\newblock Automatic abdominal multi-organ segmentation using deep convolutional
+  neural network and time-implicit level sets.
+\newblock \emph{Int. J. Comput. Assist. Radiol. Surg.}, pages 1--13, 2016.
+
+\bibitem[Institute(2014)]{nci2014kidney}
+National~Cancer Institute.
+\newblock Kidney cancer.
+\newblock \emph{National Cancer Institute}, 2014.
+\newblock URL \url{http://www.cancer.gov/cancertopics/types/kidney}.
+
+\bibitem[Jayson and Sanders(1998)]{jayson1998increased}
+Mary Jayson and Holt Sanders.
+\newblock Increased incidence of serendipitously discovered renal cell
+  carcinoma.
+\newblock \emph{Urology}, 51\penalty0 (2):\penalty0 203--205, 1998.
+
+\bibitem[Lee et~al.(2002)Lee, Katz, Fearn, and Russo]{lee2002mode}
+Cheryl~T Lee, Jared Katz, Paul~A Fearn, and Paul Russo.
+\newblock Mode of presentation of renal cell carcinoma provides prognostic
+  information.
+\newblock In \emph{Urologic Oncology: Seminars and Original Investigations},
+  volume~7, pages 135--140. Elsevier, 2002.
+
+\bibitem[Lewis and Maxwell(2012)]{gareth2012early}
+Gareth Lewis and Alexander~P. Maxwell.
+\newblock Early diagnosis improves survival in kidney cancer.
+\newblock \emph{Practitioner}, 256\penalty0 (1748):\penalty0 13--16, 2012.
+
+\bibitem[Luciani et~al.(2000)Luciani, Cestari, and
+  Tallarigo]{luciani2000incidental}
+Lorenzo~G Luciani, Roberto Cestari, and Carlo Tallarigo.
+\newblock Incidental renal cell carcinoma?age and stage characterization and
+  clinical implications: study of 1092 patients (1982--1997).
+\newblock \emph{Urology}, 56\penalty0 (1):\penalty0 58--62, 2000.
+
+\bibitem[OECD(2017)]{oecd2017stat}
+OECD.
+\newblock Health care utilisation.
+\newblock \emph{OECD Health Statistics (database)}, 2017.
+\newblock \doi{http://dx.doi.org/10.1787/data-00542-en}.
+\newblock URL \url{/content/data/data-00542-en}.
+
+\bibitem[Piao et~al.(2015)Piao, Kim, and Park]{piao2015segmentation}
+Nanzhou Piao, Jong-Gun Kim, and Rae-Hong Park.
+\newblock Segmentation of cysts in kidney and 3-d volume calculation from ct
+  images.
+\newblock \emph{Int. J. Comput. Graph. Animation}, 5\penalty0 (1):\penalty0 1,
+  2015.
+
+\bibitem[Surveillance and Program(2017)]{seer2017kidney}
+Epidemiology Surveillance and End~Results Program.
+\newblock Kidney and renal pelvis cancer.
+\newblock \emph{Surveillance, Epidemiology, and End Results Program}, 2017.
+\newblock URL \url{https://seer.cancer.gov/statfacts/html/kidrp.html}.
+
+\bibitem[Taal et~al.(2011)Taal, Chertow, Marsden, Skorecki, Alan, and
+  Brenner]{taal2011brenner}
+Maarten~W Taal, Glenn~M Chertow, Philip~A Marsden, Karl Skorecki, SL~Alan, and
+  Barry~M Brenner.
+\newblock \emph{Brenner and Rector's the Kidney}.
+\newblock Elsevier Health Sciences, 2011.
+
+\bibitem[Thong et~al.(2016)Thong, Kadoury, Pich{\'e}, and
+  Pal]{thong2016convolutional}
+William Thong, Samuel Kadoury, Nicolas Pich{\'e}, and Christopher~J Pal.
+\newblock Convolutional networks for kidney segmentation in contrast-enhanced
+  ct scans.
+\newblock \emph{Computer Methods in Biomechanics and Biomedical Engineering:
+  Imaging \& Visualization}, pages 1--6, 2016.
+
+\bibitem[Wolz et~al.(2012)Wolz, Chu, Misawa, Mori, and Rueckert]{wolz2012multi}
+Robin Wolz, Chengwen Chu, Kazunari Misawa, Kensaku Mori, and Daniel Rueckert.
+\newblock Multi-organ abdominal ct segmentation using hierarchically weighted
+  subject-specific atlases.
+\newblock In \emph{MICCAI}, pages 10--17. Springer, 2012.
+
+\bibitem[Yang et~al.(2014)Yang, Gu, Chen, Liu, Tang, Shu, and
+  Toumoulin]{yang2014automatic}
+Guanyu Yang, Jinjin Gu, Yang Chen, Wangyan Liu, Lijun Tang, Huazhong Shu, and
+  Christine Toumoulin.
+\newblock Automatic kidney segmentation in ct images based on multi-atlas image
+  registration.
+\newblock In \emph{Engineering in Medicine and Biology Society (EMBC), 2014
+  36th Annual International Conference of the IEEE}, pages 5538--5541. IEEE,
+  2014.
+
+\bibitem[Zhou et~al.(2016)Zhou, Ito, Takayama, Wang, Hara, and
+  Fujita]{zhou2016three}
+Xiangrong Zhou, Takaaki Ito, Ryosuke Takayama, Song Wang, Takeshi Hara, and
+  Hiroshi Fujita.
+\newblock Three-dimensional ct image segmentation by combining 2d fully
+  convolutional network with 3d majority voting.
+\newblock In \emph{International Workshop on Large-Scale Annotation of
+  Biomedical Data and Expert Label Synthesis}, pages 111--120. Springer, 2016.
+
+\end{thebibliography}
