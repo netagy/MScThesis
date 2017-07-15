@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -95,6 +95,12 @@ Mary Jayson and Holt Sanders.
   carcinoma.
 \newblock \emph{Urology}, 51\penalty0 (2):\penalty0 203--205, 1998.
 
+\bibitem[Kim and Park(2004)]{kim2004computer}
+D-Y Kim and J-W Park.
+\newblock Computer-aided detection of kidney tumor on abdominal computed
+  tomography scans.
+\newblock \emph{Acta radiologica}, 45\penalty0 (7):\penalty0 791--795, 2004.
+
 \bibitem[Lee et~al.(2002)Lee, Katz, Fearn, and Russo]{lee2002mode}
 Cheryl~T Lee, Jared Katz, Paul~A Fearn, and Paul Russo.
 \newblock Mode of presentation of renal cell carcinoma provides prognostic
@@ -106,6 +112,32 @@ Cheryl~T Lee, Jared Katz, Paul~A Fearn, and Paul Russo.
 Gareth Lewis and Alexander~P. Maxwell.
 \newblock Early diagnosis improves survival in kidney cancer.
 \newblock \emph{Practitioner}, 256\penalty0 (1748):\penalty0 13--16, 2012.
+
+\bibitem[Linguraru et~al.(2009)Linguraru, Yao, Gautam, Peterson, Li, Linehan,
+  and Summers]{linguraru2009renal}
+Marius~George Linguraru, Jianhua Yao, Rabindra Gautam, James Peterson, Zhixi
+  Li, W~Marston Linehan, and Ronald~M Summers.
+\newblock Renal tumor quantification and classification in contrast-enhanced
+  abdominal ct.
+\newblock \emph{Pattern recognition}, 42\penalty0 (6):\penalty0 1149--1161,
+  2009.
+
+\bibitem[Linguraru et~al.(2011)Linguraru, Wang, Shah, Gautam, Peterson,
+  Linehan, and Summers]{linguraru2011automated}
+Marius~George Linguraru, Shijun Wang, Furhawn Shah, Rabindra Gautam, James
+  Peterson, W~Marston Linehan, and Ronald~M Summers.
+\newblock Automated noninvasive classification of renal cancer on multiphase
+  ct.
+\newblock \emph{Medical physics}, 38\penalty0 (10):\penalty0 5738--5746, 2011.
+
+\bibitem[Liu et~al.(2015)Liu, Wang, Linguraru, Yao, and
+  Summers]{liu2015computer}
+Jianfei Liu, Shijun Wang, Marius~George Linguraru, Jianhua Yao, and Ronald~M
+  Summers.
+\newblock Computer-aided detection of exophytic renal lesions on non-contrast
+  ct images.
+\newblock \emph{Medical image analysis}, 19\penalty0 (1):\penalty0 15--29,
+  2015.
 
 \bibitem[Luciani et~al.(2000)Luciani, Cestari, and
   Tallarigo]{luciani2000incidental}
@@ -127,6 +159,15 @@ Nanzhou Piao, Jong-Gun Kim, and Rae-Hong Park.
   images.
 \newblock \emph{Int. J. Comput. Graph. Animation}, 5\penalty0 (1):\penalty0 1,
   2015.
+
+\bibitem[Summers et~al.(2001)Summers, Agcaoili, McAuliffe, Dalal, Yim, Choyke,
+  Walther, and Linehan]{summers2001helical}
+Ronald~M Summers, Cecily~ML Agcaoili, Matthew~J McAuliffe, Sarang~S Dalal,
+  Peter~J Yim, Peter~L Choyke, MM~Walther, and W~Marston Linehan.
+\newblock Helical ct of von hippel-lindau: semi-automated segmentation of renal
+  lesions.
+\newblock In \emph{Image Processing, 2001. Proceedings. 2001 International
+  Conference on}, volume~2, pages 293--296. IEEE, 2001.
 
 \bibitem[Surveillance and Program(2017)]{seer2017kidney}
 Epidemiology Surveillance and End~Results Program.

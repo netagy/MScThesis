@@ -122,10 +122,6 @@ Simple renal cysts are benign and asymptomatic fluid collections in the kidney, 
 At the other end of the scale, renal cancer is a lethal disease that manifests as malignant renal lesions. Renal cancer causes approximately 14,000 deaths in the United States every year \cite{nci2014kidney}\cite{seer2017kidney}. The majority of renal cell carcinomas, which account for 90\% of kidney cancers,  are asymptomatic \cite{lee2002mode}, and they as well are usually found incidentally on noninvasive imaging performed for unrelated problems \cite{jayson1998increased}\cite{luciani2000incidental}\cite{homma1995increased}. Early diagnosis of kidney cancer significantly improves survival rates, which fall dramatically once the cancer has spread beyond the kidney \cite{gareth2012early}.
 In this work, we address the detection of both types of renal lesions as incidental findings in a real clinical setting.
 
-% OLD: However, thoroughly examining the results of a CT scan is a very time-consuming task for a radiologist, and these opportunities for early detection of asymptomatic medical conditions are often missed due to lack of resources. This is only one of many reasons for the growing interest in automated tools for medical imaging analysis.
-
-% OLD: While organs detection and segmentation is a crucial step for applications based on 3D CT images, it is eventually just a means to an end - detecting and segmenting lesions, diagnosing diseases and monitoring their progress accurately and consistently. 
-
 \section{Computed tomography (CT)}
 
 % SKELETON: Describe the commonness of CT use in medical diagnosis. Describe important properties of this modality (the image intensity is equivalent to the physical density) and useful terminology (axial, sagittal, coronal, pixel spacing and spacing between slices). Explain about the use of contrast enhancement.
@@ -161,25 +157,14 @@ An algorithm proposed by Badura et. al \cite{badura2016automatic} employs thresh
 \section{Tumor detection}
 
 % SKELETON: Describe the problem, the main challenges, and what has been done so far (literature survey).
-
-Naturally, cancerous renal tumors have been the focus of more ...
-
-1) Summers (Summers et al., 2001) developed a marker controlled watershed algorithm to segment both kidneys and lesions.
-2) Thresholding algorithm was employed to extract kidneys in (Kim and Park, 2004), and renal lesions were detected and segmented using texture analysis as well as homogeneous region growing.
-3) Linguraru (Linguraru et al., 2009) improved renal lesion segmentation by combining fast-matching and geodesic level set. This method generated accurate lesion segmentation, and quantification of renal lesions became feasible.
-4) Later on, the lesion type was classified using support vector machine on the lesion segmentation (Linguraru et al., 2011).
-5) Liu et al.2015 exophytic lesions
-
-Nevertheless, all these methods investigated texture information of renal lesions because contrast enhancement induces notable intensity difference between lesions and normal kidney tissues. However, texture feature is not distinctive in non-contrast CTC images (Fig. 1a), which makes it difficult to apply these methods to detect renal lesions on CTC images.
-
-% OLD: In \cite{summers2001helical}, thresholding and morphological operations are applied for identification of renal lesions. However, the work focused on the quantitation of the lesions, and detection rates were not reported.
-%Another computer-aided approach for quantification and classification of renal tumors uses a combination of fast marching and geodesic active contour level sets \cite{linguraru2009renal}. In \cite{linguraru2011automated}, multi-phase CT scans were utilized for computing histograms of curvature-related features for the purpose of renal cancer quantification and classification.
-
-% OLD: Another solution, proposed by Liu et al. \cite{liu2015computer}, relies on geometric changes on the kidney surface for cyst candidate detection. Again, shape features are utilized for the classification of the candidates. This algorithm was indeed validated on a large data-set but is limited to detecting only exophytic lesions, and the reported false-positive rate (15 per patient) was high.
+Unlike renal cysts, cancerous tumors are inhomogeneous in their consistency and are more similar to the kidneys in their HU values, thus making it harder to detect them. Summers et al. \cite{summers2001helical} employed thresholding and morphological operations to segment renal cysts and solid tumors and estimate their volume. However, the work focused on the quantitation of the lesions and detection rates were not reported. Kim and Park \cite{kim2004computer} detected renal lesions using texture analysis and homogeneous region growing, but their method was evaluated on 12 tumors only. Linguraru et al. \cite{linguraru2009renal} proposed a semi-automated algorithm for segmentation and quantification of renal tumors, based on fast marching and geodesic level sets. This algorithm was later extended to also classify the lesion type using support vector machine \cite{linguraru2011automated}. This method generated accurate lesion segmentations but user intervention was still required for their detection. Another solution, proposed by Liu et al. \cite{liu2015computer}, relies on geometric changes on the kidney surface for cyst candidate detection. Shape features are then utilized for the classification of the candidates. This algorithm was validated on a large data-set but is limited to detecting only exophytic lesions, and the reported false-positive rate (15 per patient) was high.
 
 \section{Outline of Thesis}
 
 % SKELETON: Emphasize the problem we tried to solve, why it hasn't been solved before, and how our solution is described in this document.
+So far, no fully automatic algorithms have been shown to detect simple renal cysts reliably on a large data set. Here, for the first time, we report an algorithm that achieves this goal and demonstrate its performance. The algorithm is constructed from two main modules, a kidney segmentation module and a cyst detection module. In section <<<sec...>>> the kidney segmentation module is described, followed by a quantitative evaluation of its performance. Using its output as a starting point, the cyst detection module is then described in section <<<sec...>>>, followed by the overall performance of the algorithm.
+% TODO: update the following two sentences...
+Additionally, in section <<<sec...>>> we relate our efforts to automatically detect cancerous renal tumors, based on the kidney segmentation results. Finally, in section <<<sec>>> we conclude our work and propose some next steps...
 
 \chapter{Kidney segmentation}
 
