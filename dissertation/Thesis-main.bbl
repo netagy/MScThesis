@@ -1,9 +1,29 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abadi et~al.(2015)Abadi, Agarwal, Barham, Brevdo, Chen, Citro,
+  Corrado, Davis, Dean, Devin, Ghemawat, Goodfellow, Harp, Irving, Isard, Jia,
+  Jozefowicz, Kaiser, Kudlur, Levenberg, Man\'{e}, Monga, Moore, Murray, Olah,
+  Schuster, Shlens, Steiner, Sutskever, Talwar, Tucker, Vanhoucke, Vasudevan,
+  Vi\'{e}gas, Vinyals, Warden, Wattenberg, Wicke, Yu, and
+  Zheng]{tensorflow2015-whitepaper}
+Mart\'{\i}n Abadi, Ashish Agarwal, Paul Barham, Eugene Brevdo, Zhifeng Chen,
+  Craig Citro, Greg~S. Corrado, Andy Davis, Jeffrey Dean, Matthieu Devin,
+  Sanjay Ghemawat, Ian Goodfellow, Andrew Harp, Geoffrey Irving, Michael Isard,
+  Yangqing Jia, Rafal Jozefowicz, Lukasz Kaiser, Manjunath Kudlur, Josh
+  Levenberg, Dan Man\'{e}, Rajat Monga, Sherry Moore, Derek Murray, Chris Olah,
+  Mike Schuster, Jonathon Shlens, Benoit Steiner, Ilya Sutskever, Kunal Talwar,
+  Paul Tucker, Vincent Vanhoucke, Vijay Vasudevan, Fernanda Vi\'{e}gas, Oriol
+  Vinyals, Pete Warden, Martin Wattenberg, Martin Wicke, Yuan Yu, and Xiaoqiang
+  Zheng.
+\newblock {TensorFlow}: Large-scale machine learning on heterogeneous systems,
+  2015.
+\newblock URL \url{https://www.tensorflow.org/}.
+\newblock Software available from tensorflow.org.
 
 \bibitem[Badura et~al.(2016)Badura, Wieclawek, and
   Pycinski]{badura2016automatic}
@@ -83,12 +103,6 @@ Peijun Hu, Fa~Wu, Jialin Peng, Yuanyuan Bao, Feng Chen, and Dexing Kong.
   neural network and time-implicit level sets.
 \newblock \emph{Int. J. Comput. Assist. Radiol. Surg.}, pages 1--13, 2016.
 
-\bibitem[Institute(2014)]{nci2014kidney}
-National~Cancer Institute.
-\newblock Kidney cancer.
-\newblock \emph{National Cancer Institute}, 2014.
-\newblock URL \url{http://www.cancer.gov/cancertopics/types/kidney}.
-
 \bibitem[Jayson and Sanders(1998)]{jayson1998increased}
 Mary Jayson and Holt Sanders.
 \newblock Increased incidence of serendipitously discovered renal cell
@@ -142,9 +156,16 @@ Jianfei Liu, Shijun Wang, Marius~George Linguraru, Jianhua Yao, and Ronald~M
 \bibitem[Luciani et~al.(2000)Luciani, Cestari, and
   Tallarigo]{luciani2000incidental}
 Lorenzo~G Luciani, Roberto Cestari, and Carlo Tallarigo.
-\newblock Incidental renal cell carcinoma?age and stage characterization and
+\newblock Incidental renal cell carcinoma? age and stage characterization and
   clinical implications: study of 1092 patients (1982--1997).
 \newblock \emph{Urology}, 56\penalty0 (1):\penalty0 58--62, 2000.
+
+\bibitem[Maurer et~al.(2003)Maurer, Qi, and Raghavan]{maurer2003linear}
+Calvin~R Maurer, Rensheng Qi, and Vijay Raghavan.
+\newblock A linear time algorithm for computing exact euclidean distance
+  transforms of binary images in arbitrary dimensions.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 25\penalty0 (2):\penalty0 265--270, 2003.
 
 \bibitem[OECD(2017)]{oecd2017stat}
 OECD.
@@ -160,6 +181,20 @@ Nanzhou Piao, Jong-Gun Kim, and Rae-Hong Park.
 \newblock \emph{Int. J. Comput. Graph. Animation}, 5\penalty0 (1):\penalty0 1,
   2015.
 
+\bibitem[Ronneberger et~al.(2015)Ronneberger, Fischer, and
+  Brox]{ronneberger2015u}
+Olaf Ronneberger, Philipp Fischer, and Thomas Brox.
+\newblock U-net: Convolutional networks for biomedical image segmentation.
+\newblock In \emph{MICCAI}, pages 234--241. Springer, 2015.
+
+\bibitem[Roth et~al.(2014)Roth, Lu, Seff, Cherry, Hoffman, Wang, Liu, Turkbey,
+  and Summers]{roth2014new}
+Holger~R Roth, Le~Lu, Ari Seff, Kevin~M Cherry, Joanne Hoffman, Shijun Wang,
+  Jiamin Liu, Evrim Turkbey, and Ronald~M Summers.
+\newblock A new 2.5 d representation for lymph node detection using random sets
+  of deep convolutional neural network observations.
+\newblock In \emph{MICCAI}, pages 520--527. Springer, 2014.
+
 \bibitem[Summers et~al.(2001)Summers, Agcaoili, McAuliffe, Dalal, Yim, Choyke,
   Walther, and Linehan]{summers2001helical}
 Ronald~M Summers, Cecily~ML Agcaoili, Matthew~J McAuliffe, Sarang~S Dalal,
@@ -172,7 +207,7 @@ Ronald~M Summers, Cecily~ML Agcaoili, Matthew~J McAuliffe, Sarang~S Dalal,
 \bibitem[Surveillance and Program(2017)]{seer2017kidney}
 Epidemiology Surveillance and End~Results Program.
 \newblock Kidney and renal pelvis cancer.
-\newblock \emph{Surveillance, Epidemiology, and End Results Program}, 2017.
+\newblock \emph{National Cancer Institute}, 2017.
 \newblock URL \url{https://seer.cancer.gov/statfacts/html/kidrp.html}.
 
 \bibitem[Taal et~al.(2011)Taal, Chertow, Marsden, Skorecki, Alan, and
@@ -189,6 +224,11 @@ William Thong, Samuel Kadoury, Nicolas Pich{\'e}, and Christopher~J Pal.
   ct scans.
 \newblock \emph{Computer Methods in Biomechanics and Biomedical Engineering:
   Imaging \& Visualization}, pages 1--6, 2016.
+
+\bibitem[Vedaldi and Lenc(2015)]{vedaldi15matconvnet}
+A.~Vedaldi and K.~Lenc.
+\newblock Matconvnet -- convolutional neural networks for matlab.
+\newblock In \emph{Proceeding of the {ACM} Int. Conf. on Multimedia}, 2015.
 
 \bibitem[Wolz et~al.(2012)Wolz, Chu, Misawa, Mori, and Rueckert]{wolz2012multi}
 Robin Wolz, Chengwen Chu, Kazunari Misawa, Kensaku Mori, and Daniel Rueckert.

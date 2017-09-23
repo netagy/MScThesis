@@ -1,28 +1,28 @@
 \select@language {english}
 \contentsline {chapter}{\@textofAck }{iv}
 \contentsline {chapter}{\@textofLoF }{1}
-\contentsline {chapter}{\@textofLoT }{2}
-\contentsline {chapter}{\numberline {\@textofChapter \ 1:}Introduction}{3}
-\contentsline {section}{\numberline {1.1}Renal lesions}{3}
-\contentsline {section}{\numberline {1.2}Computed tomography (CT)}{4}
-\contentsline {section}{\numberline {1.3}Kidney segmentation}{5}
-\contentsline {section}{\numberline {1.4}Cyst detection}{6}
-\contentsline {section}{\numberline {1.5}Tumor detection}{6}
-\contentsline {section}{\numberline {1.6}Outline of Thesis}{7}
-\contentsline {chapter}{\numberline {\@textofChapter \ 2:}Kidney segmentation}{8}
-\contentsline {section}{\numberline {2.1}Methods}{8}
-\contentsline {section}{\numberline {2.2}Data-set}{8}
-\contentsline {section}{\numberline {2.3}Experiments and results}{8}
-\contentsline {section}{\numberline {2.4}Discussion}{8}
-\contentsline {chapter}{\numberline {\@textofChapter \ 3:}Cyst detection}{9}
-\contentsline {section}{\numberline {3.1}Identification of cyst candidates}{9}
-\contentsline {section}{\numberline {3.2}Classification of cyst candidates}{9}
-\contentsline {section}{\numberline {3.3}Data-set}{9}
-\contentsline {section}{\numberline {3.4}Experiments and results}{9}
-\contentsline {section}{\numberline {3.5}Discussion}{10}
-\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Tumor detection}{11}
-\contentsline {section}{\numberline {4.1}Data-set}{11}
-\contentsline {section}{\numberline {4.2}Experiments and results}{11}
-\contentsline {section}{\numberline {4.3}Discussion}{11}
-\contentsline {chapter}{\numberline {\@textofChapter \ 5:}Conclusions}{12}
-\contentsline {chapter}{\@textofBIB }{13}
+\contentsline {chapter}{\@textofLoT }{3}
+\contentsline {chapter}{\numberline {\@textofChapter \ 1:}Introduction}{4}
+\contentsline {section}{\numberline {1.1}Renal lesions}{4}
+\contentsline {section}{\numberline {1.2}Computed tomography (CT)}{5}
+\contentsline {section}{\numberline {1.3}Kidney segmentation}{6}
+\contentsline {section}{\numberline {1.4}Cyst detection}{7}
+\contentsline {section}{\numberline {1.5}Tumor detection}{8}
+\contentsline {section}{\numberline {1.6}Outline of Thesis}{8}
+\contentsline {chapter}{\numberline {\@textofChapter \ 2:}Kidney segmentation}{9}
+\contentsline {section}{\numberline {2.1}Methods}{9}
+\contentsline {section}{\numberline {2.2}Data-set}{9}
+\contentsline {section}{\numberline {2.3}Experiments and results}{10}
+\contentsline {section}{\numberline {2.4}Discussion}{12}
+\contentsline {chapter}{\numberline {\@textofChapter \ 3:}Cyst detection}{13}
+\contentsline {section}{\numberline {3.1}Identification of cyst candidates}{13}
+\contentsline {section}{\numberline {3.2}Classification of cyst candidates}{14}
+\contentsline {section}{\numberline {3.3}Data-set}{15}
+\contentsline {section}{\numberline {3.4}Experiments and results}{15}
+\contentsline {section}{\numberline {3.5}Discussion}{16}
+\contentsline {chapter}{\numberline {\@textofChapter \ 4:}Tumor detection}{18}
+\contentsline {section}{\numberline {4.1}Data-set}{18}
+\contentsline {section}{\numberline {4.2}Experiments and results}{18}
+\contentsline {section}{\numberline {4.3}Discussion}{20}
+\contentsline {chapter}{\numberline {\@textofChapter \ 5:}Conclusions}{23}
+\contentsline {chapter}{\@textofBIB }{25}

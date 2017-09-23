@@ -1,6 +1,16 @@
 \select@language {english}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The kidney segmentation FCN based on the UNet architecture. The figure is adapted from \cite {ronneberger2015u}.}}{10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Kidney segmentation accuracy measurements of 15 volumetric CT cases}}{11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Sample kidney segmentation results using the proposed FCN. The manually annotated ground truth (green) and the segmentation map produced by the FCN (red) are marked on the CT images. Simple renal cysts are evident in all of the examples, demonstrating the network's ability to successfully segment them as part of the kidney.}}{12}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Main steps of the cyst candidates selection algorithm.}}{14}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The cyst classification CNN architecture. The network comprises three layers of 3x3 convolution and 2x2 max pooling followed by two fully-connected (FC) layers.}}{15}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Sample cysts detected using the proposed algorithm.}}{16}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The trade-off between the TP rate and the average FP rate per patient as a function of (a) the radius threshold and (b) the adjacency threshold. The black line is the maximal TP rate that can be achieved on the given data-set with the proposed algorithm.}}{17}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Sample tumors from our data-set demonstrating the high variability of cancerous renal tumors.}}{19}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Recall and precision of tumor segmentation on training and validation data-sets using a 2D UNet-based architecture.}}{20}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Recall and precision of tumor segmentation on training and validation data-sets using a 3D UNet-based architecture.}}{21}
 \addvspace {10pt}

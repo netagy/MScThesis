@@ -4,45 +4,45 @@ The top-level auxiliary file: Thesis-main.aux
 The style file: plainnat.bst
 Database file #1: references.bib
 Warning--can't use both volume and number fields in lee2002mode
-You've used 28 entries,
+You've used 32 entries,
             2773 wiz_defined-function locations,
-            760 strings with 11508 characters,
-and the built_in function-call counts, 18126 in all, are:
-= -- 1597
-> -- 1348
-< -- 22
-+ -- 451
-- -- 423
-* -- 1573
-:= -- 2741
-add.period$ -- 97
-call.type$ -- 28
-change.case$ -- 223
-chr.to.int$ -- 28
-cite$ -- 57
-duplicate$ -- 729
-empty$ -- 1241
-format.name$ -- 459
-if$ -- 3828
+            780 strings with 13102 characters,
+and the built_in function-call counts, 22556 in all, are:
+= -- 1937
+> -- 1866
+< -- 24
++ -- 623
+- -- 591
+* -- 2014
+:= -- 3448
+add.period$ -- 111
+call.type$ -- 32
+change.case$ -- 291
+chr.to.int$ -- 32
+cite$ -- 65
+duplicate$ -- 836
+empty$ -- 1433
+format.name$ -- 633
+if$ -- 4720
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 29
-newline$ -- 152
-num.names$ -- 112
-pop$ -- 459
+missing$ -- 32
+newline$ -- 172
+num.names$ -- 128
+pop$ -- 606
 preamble$ -- 1
-purify$ -- 196
+purify$ -- 260
 quote$ -- 0
-skip$ -- 633
+skip$ -- 761
 stack$ -- 0
-substring$ -- 689
-swap$ -- 157
-text.length$ -- 16
+substring$ -- 786
+swap$ -- 182
+text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 303
+type$ -- 347
 warning$ -- 1
-while$ -- 145
+while$ -- 165
 width$ -- 0
-write$ -- 386
+write$ -- 439
 (There was 1 warning)
